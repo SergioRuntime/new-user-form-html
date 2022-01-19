@@ -1,9 +1,38 @@
 .personal-data {
     max-width: 700px;
     width: 100%;
+    position: relative;
+    padding-top: 105px;
+}
+
+.personal-data-container {
+    width: 100%;
     background: #fff;
-    padding: 25px 30px;
+    padding: 55px 30px 8px 30px;
     border-radius: 5px;
+}
+
+.personal-data-profile {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+}
+
+.personal-data-profile .profileImage {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #ccc;
 }
 
 .user fieldset {
@@ -57,17 +86,6 @@
     border-color: #9b59b6;
 }
 
-.user .user__details-inputbox .profileImage {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-}
-
 .personal-data-buttons {
     height: 45px;
     margin: 36px 0;
@@ -85,6 +103,7 @@
     border-radius: 5px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
+    padding: 0 16px;
 }
 
 .personal-data-buttons .personal-data-buttons__send {
@@ -103,12 +122,15 @@
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
 
-.personal-data-buttons .personal-data-buttons__disabled input {
+.personal-data-buttons-pack {
     display: flex;
 }
 
 .personal-data-buttons .personal-data-buttons__disabled {
-    padding: 0 8px;
+    border: none;
+    color: #c5c5c5;
+    margin: 0 8px;
+    cursor: pointer;
 }
 
 .personal-data-buttons__reset {

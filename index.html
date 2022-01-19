@@ -9,70 +9,79 @@
   </head>
   <body>
     <div class="personal-data">
-      <form id="form" method="post" action="enviado.html">
-        <div class="user">
-          <div class="user__details">
-            <!--PROFILE PHOTO-->
-            <div class="user__details-inputbox">
-              <image
-                class="profileImage"
-                src="images/fondo-tecnologico-preferido-selectores.jpeg"
-              />
-            </div>
-            <!--EMAIL-->
-            <div class="user__details-inputbox">
-              <label for="email"
-                >User<span class="user__details-title">*</span></label
-              ><input
-                type="email"
-                placeholder="Tu correo electrónico"
-                name="email"
-                id="email"
-                required
-                autofocus
-              />
-            </div>
-            <!--PASSWORD-->
-            <div class="user__details-inputbox">
-              <label for="password">Password</label
-              ><input
-                type="password"
-                placeholder="Tu contraseña"
-                name="password"
-                id="password"
-                required
-                maxlength="8"
-              />
+      <div class="personal-data-container">
+        <form id="form" method="post" action="enviado.html">
+          <!--PROFILE PHOTO-->
+          <div class="personal-data-profile">
+            <img
+              class="profileImage"
+              title="Añadir imagen"
+              src="images/user-plus-svgrepo-com.svg"
+            />
+            <input
+              type="file"
+              name="foto"
+              id="foto"
+              accept=".jpeg, .jpg, image/png"
+            />
+          </div>
+          <div class="user">
+            <div class="user__details">
+              <!--USSER-->
+              <div class="user__details-inputbox">
+                <label for="email"
+                  >Usuario<span class="user__details-title">*</span></label
+                ><input
+                  type="email"
+                  placeholder="Tu correo electrónico"
+                  name="email"
+                  id="email"
+                  required
+                  autofocus
+                />
+              </div>
+              <!--PASSWORD-->
+              <div class="user__details-inputbox">
+                <label for="password">Contraseña</label
+                ><input
+                  type="password"
+                  placeholder="Tu contraseña"
+                  name="password"
+                  id="password"
+                  required
+                  maxlength="8"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <!--BUTTONS-->
-        <div class="personal-data-buttons">
-          <!--BUTTON SEND-->
-          <input
-            class="personal-data-buttons__send"
-            type="submit"
-            value="Enviar"
-            target="__blank"
-          />
-          <div class="personal-data-buttons-pack">
-            <!--BUTTON DISABLED-->
+          <!--BUTTONS-->
+          <div class="personal-data-buttons">
+            <!--BUTTON SEND-->
             <input
-              class="personal-data-buttons__disabled"
+              class="personal-data-buttons__send"
               type="submit"
-              value="Deshabilitado"
+              value="Enviar"
+              target="__blank"
             />
-            <!--BUTTON RESET-->
-            <input
-              class="personal-data-buttons__reset"
-              type="reset"
-              value="Limpiar"
-            />
+            <div class="personal-data-buttons-pack">
+              <!--BUTTON DISABLED-->
+              <input
+                class="personal-data-buttons__disabled"
+                type="submit"
+                value="Deshabilitado"
+              />
+              <!--BUTTON RESET-->
+              <input
+                class="personal-data-buttons__reset"
+                type="reset"
+                value="Limpiar"
+              />
+            </div>
           </div>
-        </div>
-        <!--HIDDEN INPUT-->
-        <input type="hidden" id="amigo" name="amigo" value="amigo" />
-      </form>
+          <!--HIDDEN INPUT-->
+          <input type="hidden" id="amigo" name="amigo" value="amigo" />
+        </form>
+      </div>
     </div>
   </body>
 </html>
