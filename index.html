@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="personal-data">
+      <form id="form" method="post" action="enviado.html">
+        <div class="user">
+          <div class="user__details">
+            <!--PROFILE PHOTO-->
+            <div class="user__details-inputbox">
+              <image
+                class="profileImage"
+                src="images/fondo-tecnologico-preferido-selectores.jpeg"
+              />
+            </div>
+            <!--EMAIL-->
+            <div class="user__details-inputbox">
+              <label for="email"
+                >User<span class="user__details-title">*</span></label
+              ><input
+                type="email"
+                placeholder="Tu correo electrónico"
+                name="email"
+                id="email"
+                required
+                autofocus
+              />
+            </div>
+            <!--PASSWORD-->
+            <div class="user__details-inputbox">
+              <label for="password">Password</label
+              ><input
+                type="password"
+                placeholder="Tu contraseña"
+                name="password"
+                id="password"
+                required
+                maxlength="8"
+              />
+            </div>
+          </div>
+        </div>
+        <!--BUTTONS-->
+        <div class="personal-data-buttons">
+          <!--BUTTON SEND-->
+          <input
+            class="personal-data-buttons__send"
+            type="submit"
+            value="Enviar"
+            target="__blank"
+          />
+          <!--BUTTON DISABLED-->
+          <input
+            class="personal-data-buttons__disabled"
+            type="submit"
+            value="En mantenimiento"
+          />
+          <!--BUTTON RESET-->
+          <input
+            class="personal-data-buttons__reset"
+            type="reset"
+            value="Limpiar"
+          />
+        </div>
+        <!--HIDDEN INPUT-->
+        <input type="hidden" id="amigo" name="amigo" value="amigo" />
+      </form>
+    </div>
+  </body>
+</html>
