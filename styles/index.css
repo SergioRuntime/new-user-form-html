@@ -107,6 +107,10 @@
     display: flex;
 }
 
+.personal-data-buttons .personal-data-buttons__disabled {
+    padding: 0 8px;
+}
+
 .personal-data-buttons__reset {
     cursor: pointer;
     border: 1px solid;
