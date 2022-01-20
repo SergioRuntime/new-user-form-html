@@ -8,7 +8,7 @@
 .personal-data-container {
     width: 100%;
     background: #fff;
-    padding: 55px 30px 8px 30px;
+    padding: 70px 30px 8px 30px;
     border-radius: 5px;
 }
 
@@ -19,20 +19,35 @@
     top: 0;
     left: 0;
     width: 100%;
-    cursor: pointer;
+    height: 150px;
     align-items: center;
 }
 
-.personal-data-profile .profileImage {
+.personal-data-profile__circle {
     width: 150px;
-    height: 150px;
-    overflow: hidden;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    height: 100%;
     border-radius: 50%;
-    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 2px 5px 0px;
+}
+
+.personal-data-profile__upload {
+    width: 100px;
+    height: 100px;
+}
+
+.personal-data-profile input {
+    display: none;
+}
+
+.personal-data-profile img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .user fieldset {

@@ -13,15 +13,19 @@
         <form id="form" method="post" action="enviado.html">
           <!--PROFILE PHOTO-->
           <div class="personal-data-profile">
-            <input
-              type="file"
-              name="file"
-              id="file"
-              accept=".jpeg, .jpg, image/png"
-            />
-            <label for="file" id="uploadImg">
-              <img id="photo" title="Añadir imagen" src="images/add.png"
-            /></label>
+            <div class="personal-data-profile__circle">
+              <div class="personal-data-profile__upload">
+                <input
+                  type="file"
+                  name="file"
+                  id="file"
+                  accept=".jpeg, .jpg, image/png"
+                />
+                <label for="file" id="uploadImg">
+                  <img id="photo" title="Añadir imagen" src="images/add.png"
+                /></label>
+              </div>
+            </div>
           </div>
           <div class="user">
             <div class="user__details">
